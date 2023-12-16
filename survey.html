@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesurvey.css">
+</head>
+<body class="body">
+    <header><h1>Survey Form</h1></header>
+    <div class="div">
+        Below is a survey form you should fill in order for us to get<br> details 
+        about the you individually, and improve on our servicing to you.<br>
+        <strong>Thank you</strong> <br>
+    </div>
+            <section class="section1">
+                <form>
+                    <label for="Fname">First Name: </label>
+                    <input name="Fname" id="Fname" type="text" placeholder="first name" ><br><br>
+                    <label for="sname">Second Name: </label>
+                    <input name="sname" id="sname" type="text" placeholder="second name"><br><br>
+                    <label for="gender">Gender:</label><br>
+                    <input name="gender" id="gender" type="radio" value="female"> Female <br>
+                    <input name="gender" id="gender" type="radio" value="male"> Male <br>
+                    <input name="gender" id="gender" type="radio" value="prefer not to say"> 
+                    Prefer not to say<br><br>
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" placeholder="kakwwwh@gmail.com" required>
+                </form>
+            </section>
+            <section class="section2">
+                <form>
+                    <label for="nationality">Nationality</label>
+                    <input name="nationality" list="Nationality" placeholder="nationality">
+                        <datalist id="Nationality">
+                            <option value="Kenyan">Kenyan</option>
+                            <option value="Tanzanian">Tanzanian</option>
+                            <option>Ugandan</option>
+                            <option>Ethiopian</option>
+                            <option>Somalian</option>
+                        </datalist><br><br>
+                    <label for="date">Date of Birth:</label>
+                    <input type="number" name="date" id="date" placeholder="YYYY-MM-DD" pattern="[0-9] {10}" required><br><br>
+                    <label for="years old">Age:</label>
+                    <input type="number" min="10" max="35" name="years old" placeholder="age" required><br><br>
+                    <label for="language">Languages Spoken:</label>
+                    <select title="Options">
+                        <option>Select one</option>
+                        <option value="english">English</option>
+                        <option value="swahili">Swahili</option>
+                        <option value="french">French</option>
+                        <option value="native">Native</option>
+                    </select><br><br>
+                    <label for="password">Password:</label>
+                    <input name="password" pattern="[a-zA-Z0-9]{8}"  placeholder="8 digits" required>
+                </form>
+            </section>
+            <div class="submit">
+                <input type="submit" name="submit" value="Submit"  style="width: 200px; 
+                height: 100px; font-size: 20px; background-color: rgb(245,57,57);"
+                >
+            </div>
+        
+</body>
+</html>
