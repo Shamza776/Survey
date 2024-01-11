@@ -10,4 +10,9 @@ function upperCase(){
     fname.value =  fname.value.toUpperCase();
 
     console.log(fname);
+};
+
+function date() {
+    let date = document.getElementById('date');
+
 }
